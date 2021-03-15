@@ -3,7 +3,6 @@ import MenuItem from "./MenuItem";
 import "./Menu.css";
 
 function Menu(props) {
-  /* useEffect(() => {}); */
   if (props.isOpen) {
     document.body.style.overflow = "hidden";
   } else {
