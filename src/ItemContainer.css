@@ -1,0 +1,15 @@
+.ItemsContainer {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.ItemsContainer-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1300px;
+}
