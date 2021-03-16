@@ -1,18 +1,20 @@
-import React from "react";
+import React, { memo } from "react";
 import "./Item.css";
 
-export default function Item(props) {
+function Item(props) {
   return (
     <div className="Item">
       <div className="Item-title">
-        <h4>{props.itemData.title}</h4>
+        <h4>{props.title}</h4>
       </div>
       <div className="Item-image-container">
-        <img src={props.itemData.image} alt={props.itemData.title}></img>
+        <img src={props.image} alt={props.title}></img>
       </div>
-      <h5>${props.itemData.price}</h5>
+      <h5>${props.price}</h5>
       <hr />
-      <p>{props.itemData.description}</p>
+      <p>{props.description}</p>
     </div>
   );
 }
+
+export default memo(Item);

@@ -10,7 +10,7 @@ export default function ItemsContainer() {
     <div className="ItemsContainer">
       <div className="ItemsContainer-items">
         {items.map((i) => {
-          return <Item key={i.id} itemData={{ ...i }} />;
+          return <Item key={i.id} {...i} />;
         })}
       </div>
     </div>
