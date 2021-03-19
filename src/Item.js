@@ -8,7 +8,10 @@ function Item(props) {
         <h4>{props.title}</h4>
       </div>
       <div className="Item-image-container">
-        <img src={props.image} alt={props.title}></img>
+        <img
+          src={props.image.replace("fakestoreapi", "fakestoreapi.herokuapp")}
+          alt={props.title}
+        ></img>
       </div>
       <h5>${props.price}</h5>
       <hr />

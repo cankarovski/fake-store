@@ -6,7 +6,7 @@ import { StatusContext } from "../contexts/StatusContext";
 import { DispatchStatusContext } from "../contexts/StatusContext";
 import axios from "axios";
 
-const API_URL = "https://fakestoreapi.com/";
+const API_URL = "https://fakestoreapi.herokuapp.com/";
 
 export default () => {
   const items = useContext(ItemsContext);
